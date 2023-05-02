@@ -43,7 +43,7 @@ class Main : JavaPlugin() {
                 then("target" to player()) {
                     executes {
                         val target: Player by it
-                        sender.sendMessage("§a${target} Ping : " + target.ping + "ms")
+                        sender.sendMessage("§a${target.name} Ping : " + target.ping + "ms")
                     }
                 }
             }
